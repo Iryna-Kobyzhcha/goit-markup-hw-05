@@ -250,7 +250,7 @@ color 250ms var(--timing-function);
   min-width: 528px;
   min-height: 581px;
 
-  background-color: var(--second-background-color);
+  background-color: var(--primary-background-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
 }
