@@ -233,15 +233,15 @@ color 250ms var(--timing-function);
   
   background-color: rgba(0, 0, 0, 0.25);
 
-  opacity: 1;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function),
+  visibility 250ms var(--timing-function);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  /* visibility: ; */
+  visibility: hidden;
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -479,7 +479,8 @@ padding: 6px 22px;
 border: 0 solid transparent;
 
 transition: background-color 250ms var(--timing-function),
-color 250ms var(--timing-function);
+color 250ms var(--timing-function),
+box-shadow 250ms var(--timing-function);
 }
 .button-portfolio:hover, 
 .button-portfolio:focus {
